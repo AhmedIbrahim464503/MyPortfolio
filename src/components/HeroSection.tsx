@@ -22,7 +22,7 @@ const HeroSection = () => {
                     <div className="text-center lg:text-left order-2 lg:order-1">
                         {/* Name */}
                         <h1
-                            className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold mb-6 animate-fade-in tracking-tight"
+                            className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-7xl font-bold mb-6 animate-fade-in tracking-tight"
                             style={{ animationDelay: "0.2s" }}
                         >
                             Ahmed <span className="gradient-text">Ibrahim</span>
@@ -30,7 +30,7 @@ const HeroSection = () => {
 
                         {/* Tagline */}
                         <p
-                            className="text-2xl md:text-3xl lg:text-4xl text-muted-foreground mb-8 animate-fade-in font-light"
+                            className="text-2xl md:text-3xl lg:text-3xl text-muted-foreground mb-8 animate-fade-in font-light"
                             style={{ animationDelay: "0.3s" }}
                         >
                             AI/ML Engineer | Building Intelligent Agents & SCALABLE Systems
