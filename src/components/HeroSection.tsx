@@ -71,7 +71,10 @@ const HeroSection = () => {
                                 variant="outline"
                                 className="border-primary/50 hover:bg-primary/10 text-xl px-10 py-6 h-auto"
                             >
-                                <a href="/Ahmed_Ibrahim_Resume.pdf" download="Ahmed_Ibrahim_Resume.pdf" className="flex items-center gap-2">
+                                <a
+                                    href="https://drive.google.com/uc?export=download&id=17Fm37_c_OYv62W6fznmdLRBf3vrcKVcK"
+                                    className="flex items-center gap-2"
+                                >
                                     <Download size={20} />
                                     Download Resume
                                 </a>
