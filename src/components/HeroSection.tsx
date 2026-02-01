@@ -128,7 +128,7 @@ const HeroSection = () => {
 
                     {/* Right Column: Avatar */}
                     <div className="order-1 lg:order-2 flex justify-center lg:justify-end animate-fade-in" style={{ animationDelay: "0.1s" }}>
-                        <div className="w-72 h-72 sm:w-80 sm:h-80 lg:w-[400px] lg:h-[400px] rounded-full overflow-hidden ring-4 ring-primary/50 glow-box shadow-2xl relative z-20">
+                        <div className="w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 xl:w-[400px] xl:h-[400px] rounded-full overflow-hidden ring-4 ring-primary/50 glow-box shadow-2xl relative z-20">
                             <img
                                 src={profileImage}
                                 alt="Ahmed Ibrahim"
