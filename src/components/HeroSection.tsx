@@ -1,4 +1,4 @@
-import { ArrowDown, Github, Linkedin, Mail, Phone } from "lucide-react";
+import { ArrowDown, Github, Linkedin, Mail, Phone, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ParticleBackground from "./ParticleBackground";
 import profileImage from "@/assets/profile.jpg";
@@ -65,6 +65,17 @@ const HeroSection = () => {
                             className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start mb-12 animate-fade-in"
                             style={{ animationDelay: "0.6s" }}
                         >
+                            <Button
+                                asChild
+                                size="lg"
+                                variant="outline"
+                                className="border-primary/50 hover:bg-primary/10 text-xl px-10 py-6 h-auto"
+                            >
+                                <a href="/Ahmed_Ibrahim_Resume.pdf" download="Ahmed_Ibrahim_Resume.pdf" className="flex items-center gap-2">
+                                    <Download size={20} />
+                                    Download Resume
+                                </a>
+                            </Button>
                             <Button
                                 asChild
                                 size="lg"
