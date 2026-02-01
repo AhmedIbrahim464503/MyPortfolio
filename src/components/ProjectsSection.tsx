@@ -1,7 +1,18 @@
-import { ExternalLink, Github, Search, Bot, Activity, HardDrive, Map, Layout, Server, Database } from "lucide-react";
+import { ExternalLink, Github, Search, Bot, Activity, HardDrive, Map, Layout, Server, Database, GraduationCap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const projects = [
+  {
+    title: "AdmitFlow",
+    icon: GraduationCap,
+    description:
+      "All-in-One University Admission Ecosystem featuring an advanced AI chatbot using LangChain RAG with enhanced retrieving and reranking techniques.",
+    problem: "Complex and scattered admission processes",
+    solution: "RAG-based chatbot with reranking provides precise guidance",
+    tech: ["LangChain RAG", "Reranking", "Python", "React", "MongoDB"],
+    color: "from-cyan-500 to-blue-500",
+    github: "https://github.com/AhmedIbrahim464503/AdmitFlow",
+  },
   {
     title: "FactFinder",
     icon: Search,
