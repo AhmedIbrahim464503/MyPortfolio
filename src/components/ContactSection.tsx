@@ -41,13 +41,45 @@ const ContactSection = () => {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast({
-      title: "Message Sent!",
-      description: "Thank you for reaching out. I'll get back to you soon!",
-    });
-    setFormData({ name: "", email: "", subject: "", message: "" });
+
+    // Create form data object
+    const data = new FormData();
+    data.append("name", formData.name);
+    data.append("email", formData.email);
+    data.append("subject", formData.subject);
+    data.append("message", formData.message);
+
+    try {
+      const response = await fetch("https://formspree.io/f/YOUR_FORM_ID", {
+        method: "POST",
+        body: data,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      if (response.ok) {
+        toast({
+          title: "Message Sent!",
+          description: "Thank you for reaching out. I'll get back to you soon!",
+        });
+        setFormData({ name: "", email: "", subject: "", message: "" });
+      } else {
+        toast({
+          title: "Error",
+          description: "There was a problem sending your message. Please try again.",
+          variant: "destructive",
+        });
+      }
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "There was a problem sending your message. Please try again.",
+        variant: "destructive",
+      });
+    }
   };
 
   return (
@@ -73,8 +105,8 @@ const ContactSection = () => {
                   Get in Touch
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  I'm always open to discussing new projects, creative ideas, 
-                  or opportunities to be part of your vision. Let's build something 
+                  I'm always open to discussing new projects, creative ideas,
+                  or opportunities to be part of your vision. Let's build something
                   amazing together!
                 </p>
               </div>
