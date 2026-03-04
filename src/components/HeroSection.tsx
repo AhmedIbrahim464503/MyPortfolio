@@ -72,7 +72,8 @@ const HeroSection = () => {
                                 className="border-primary/50 hover:bg-primary/10 text-xl px-10 py-6 h-auto"
                             >
                                 <a
-                                    href="https://drive.google.com/uc?export=download&id=1m5vPjYtoZGWUzpHqqm9DrKZFh8rz39Ao"
+                                    href="/Ahmed_Ibrahim_Resume.pdf"
+                                    download="Ahmed_Ibrahim_Resume.pdf"
                                     className="flex items-center gap-2"
                                 >
                                     <Download size={20} />
